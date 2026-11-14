@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/ESA_SNAP.png" alt="ESA SNAP" width="850">
+  <img src="./assets/ESA_SNAP.png" alt="ESA-SNAP" width="850">
 </p>
 
 
