@@ -1,5 +1,5 @@
 # SARC — MASTER PROJECT CONTEXT & DEVELOPMENT BRIEF
-## By IOT AVENGERS (NASA International Space Apps Challenge Global Nominee 2025)
+**By IOT AVENGERS** &nbsp;•&nbsp; [`NASA International Space Apps Challenge — Global Nominee 2025` ↗](https://www.spaceappschallenge.org/2025/find-a-team/iot-avengers/)
 ## 1. Project Identity
 
 **Project Name:** SARC
