@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="./assets/SARC_Logo.png" alt="SARC Logo" width="850">
+  <img src="./assets/SARC_Logo.jpeg" alt="SARC Logo" width="850">
 </p>
+
 # SARC — Multi-Sensor SAR & Geospatial Intelligence Platform
 
 **By IoT Avengers**  
