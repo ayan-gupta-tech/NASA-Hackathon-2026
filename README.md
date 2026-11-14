@@ -1,20 +1,6 @@
-
 <p align="center">
-  <img src="assets/SARC_Logo.png"
-       alt="SARC Logo"
-       width="850">
+  <img src="./assets/SARC_Logo.png" alt="SARC Logo" width="850">
 </p>
-
-<h1 align="center">SARC</h1>
-
-<p align="center">
-  <b>Satellite Analysis and Radar-based Characterization</b>
-</p>
-
-<p align="center">
-  Multi-Sensor Earth Observation | SAR Analytics | Geospatial Intelligence
-</p>
-
 # SARC — Multi-Sensor SAR & Geospatial Intelligence Platform
 
 **By IoT Avengers**  
