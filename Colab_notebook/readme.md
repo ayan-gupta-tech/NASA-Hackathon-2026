@@ -186,11 +186,4 @@ Because SARC integrates heterogeneous sensors across microwave, optical/elevatio
 
 ---
 
-## 8. Dataset Status Summary
 
-*Exact file sizes, granule names, product IDs, and orbit metadata for pending datasets will be appended upon download and inspection.*
-
-| Dataset | Acquisitions / Products | Current Status |
-| :--- | :--- | :--- |
-| **NISAR** | 3 HDF5 (`GCOV`) scenes | ✅ **Acquired & processed for AOI** |
-| **Sentinel-1** | Level
