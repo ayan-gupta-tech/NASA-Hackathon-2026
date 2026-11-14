@@ -1,10 +1,3 @@
-<p align="center">
-  <img src="./assets/ESA_SNAP.png" alt="ESA-SNAP" width="850">
-</p>
-
-
-
-
 
 # Sentinel-1 SAR Data Preprocessing Using ESA SNAP
 
