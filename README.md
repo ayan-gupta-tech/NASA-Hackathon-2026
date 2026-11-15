@@ -4,7 +4,7 @@
 
 # SARC — Multi-Sensor SAR & Geospatial Intelligence Platform
 
-**By IoT Avengers** 
+**By IOT AVENGERS** 
 [NASA International Space Apps Challenge Global Nominee 2025](https://www.spaceappschallenge.org/2025/find-a-team/iot-avengers/)
 [NASA International Space Apps Challenge 2026](https://www.spaceappschallenge.org/)  
 **Event:** 14–15 November 2026
@@ -643,4 +643,4 @@ SARC is an evolving multi-sensor SAR and geospatial research framework. Its curr
 
 Further terrain integration, additional SAR observations, rainfall-context analysis, ground-truth validation and platform development are required before the framework can support operational disaster-management decisions.
 
-**Built by IoT Avengers — NASA Space Apps Challenge 2026.**
+**Built by IOT AVENGERS — NASA Space Apps Challenge 2026.**
