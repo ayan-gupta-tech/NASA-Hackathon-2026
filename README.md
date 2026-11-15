@@ -31,6 +31,8 @@ The framework currently investigates two independent SAR processing branches:
 
 Additional terrain and meteorological datasets are planned for the next development phase.
 
+SARC also includes a Flutter-based mobile application that acts as the user-facing interface of the platform, bringing the project's geospatial research and visualization capabilities closer to end users.
+
 The long-term vision is to organize these observations into a human-reviewed geospatial intelligence workflow that can support researchers, disaster-management stakeholders and communities.
 
 **SARC is currently a research and analysis prototype. Its outputs are exploratory and are not validated flood predictions, operational warnings or confirmed flood extents.**
@@ -423,50 +425,68 @@ The long-term SARC architecture is organized around five functional layers:
 2. **Pre-processing Layer:** Product extraction, calibration, terrain correction, AOI alignment and data-quality checks.
 3. **Analysis Layer:** Temporal comparison, feature engineering, anomaly characterization and geospatial analysis.
 4. **Geospatial Intelligence Layer:** Spatial inventories, contextual layers, map generation and research interpretation.
-5. **Human Review & Communication Layer:** Researcher review, dashboard visualization and community-facing information.
+5. **Application Layer:** Flutter-based mobile application for user-facing interaction and geospatial information access.
+6. **Human Review & Communication Layer:** Researcher review, visualization and community-facing information.
 
 The architecture is a proposed development direction. Not all layers are currently implemented as an integrated deployed system.
 
 ## 13. System Architecture
 
 ```text
-                 MULTI-SOURCE EARTH OBSERVATION
+                    SARC — SYSTEM ARCHITECTURE
+                              |
+                              v
+                 MULTI-SOURCE DATA ACQUISITION
                               |
           +-------------------+-------------------+
-          |                   |                   |
-      Sentinel-1A           NISAR              Supporting Data
-       C-band               S-band             DEM / Rainfall
           |                   |                   |
           v                   v                   v
-   SAFE / GRD Data       GCOV / HDF5          Data Preparation
+      SENTINEL-1A            NISAR           PLANNED DATA
+       C-BAND                S-BAND          CartoDEM
+      VV / VH                HH / HV         ALOS-2 PALSAR-2
+          |                   |              INSAT-3DR
+          v                   v                   |
+     SAFE / GRD            GCOV / HDF5             |
           |                   |                   |
           v                   v                   |
-   SNAP Processing       HDF5 Extraction          |
-   Orbit / Calibration   HH / HV Extraction       |
-   Terrain Correction    AOI Subsetting           |
+     ESA SNAP             HDF5 EXTRACTION          |
+ Orbit / Calibration      AOI / Feature Prep       |
+ Terrain Correction       Temporal Analysis       |
           |                   |                   |
           v                   v                   |
-   VV / VH Analysis      Feature Engineering       |
-          |                   |                   |
-          v                   v                   |
-   Temporal Change       KMeans / Isolation        |
-   MAD / Consensus       Forest Analysis           |
+     BACKSCATTER          CLUSTERING /             |
+     CHANGE ANALYSIS      ANOMALY ANALYSIS         |
           |                   |                   |
           +-------------------+-------------------+
                               |
                               v
-                   GEOSPATIAL OUTPUTS
+                   GEOSPATIAL OUTPUT LAYER
                               |
-                Raster / Vector / Statistics
+                +-------------+-------------+
+                |             |             |
+                v             v             v
+             RASTERS        VECTORS      STATISTICS
+                |             |             |
+                +-------------+-------------+
                               |
                               v
-                    RESEARCH INTERPRETATION
+                 GEOSPATIAL INTELLIGENCE
+                  & RESEARCH INTERPRETATION
                               |
                               v
-                       HUMAN REVIEW
+                   DATA / APPLICATION LAYER
                               |
                               v
-                 FUTURE DASHBOARD / REPORTING
+                    FLUTTER MOBILE APP
+                              |
+                              v
+                    USER-FACING INTERFACE
+                              |
+                              v
+                    HUMAN REVIEW & FEEDBACK
+                              |
+                              v
+                   COMMUNITY INFORMATION
 ```
 
 The diagram represents the intended research architecture. Sentinel-1 and NISAR outputs are currently generated through separate processing workflows.
@@ -566,11 +586,12 @@ The next phase will expand SARC from separate SAR analysis branches toward a mor
 
 ### 16.3 Platform Development
 
-- Integrated geospatial visualization dashboard.
-- Organized research-output management.
+- Flutter mobile application refinement and feature expansion.
+- Integration of geospatial research outputs into the mobile interface.
+- Interactive map visualization and layer management.
+- Backend/API integration and automated data delivery, where not yet implemented.
 - Human-reviewed interpretation workflow.
 - Community-facing geospatial information.
-- Future field-level and IoT-based observations, subject to implementation and validation.
 
 These are planned developments and are not represented as completed features of the current prototype.
 
